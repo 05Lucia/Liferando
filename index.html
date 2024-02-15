@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferdodo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="./img/dodo-16.png">
+    <link rel="icon" href="./img/dodo-32.png">
+</head>
+
+<body>
+    <nav>
+        <div class="front-nav">
+            <a href="index.html"><img src="./img/dodo-48.png" alt="Dodo"></a>
+            <a href="index.html">
+                <h3>Lieferdodo</h3>
+            </a>
+        </div>
+        <div class="mid-nav">
+            <p>Speisekarte</p>
+        </div>
+        <div class="end-nav">
+            <img src="./img/deutschland.png" alt="deutschland">
+            <img src="./img/menü.png" alt="menü">
+        </div>
+    </nav>
+    <div class="main-site" id="mainSite">
+        <div class="menu-site">
+            <div><img class="top-img" src="./img/burger.jpg" alt=""></div>
+            <div class="restaurant-info">
+                <div class="restaurant-text">
+                    <h2>Fastfood Restaurant</h2>
+                    <div class="evaluation">
+                        <img src="./img/stern(1).png" alt="" class="star">
+                        <img src="./img/stern(1).png" alt="" class="star">
+                        <img src="./img/stern(1).png" alt="" class="star">
+                        <img src="./img/stern(1).png" alt="" class="star">
+                        <img src="./img/stern.png" alt="" class="star">
+                        <a href="#"> 52 Bewertung</a>
+                    </div>
+                    <div class="min-cost">
+                        <img src="./img/tasche.png" alt="">
+                        <p>Min. 20,00€ </p>
+                        <img src="./img/car.png" alt="auto">
+                        <p> 3,00€</p>
+                    </div>
+                </div>
+                <div>
+                    <img class="heart" src="./img/herz.png" alt="herz" onclick="heartRed()">
+                </div>
+            </div>
+            <div class="dish-list">
+                <div class="heading">
+                    <h2>Beliebt</h2>
+                </div>
+                <div class="recept-box">
+                    <div>
+                        <h3>Baconburger</h3>
+                        <br>
+                        <p>serviert mit Pommes</p>
+                        <br>
+                        <h3>9,00</h3>
+                    </div>
+                    <div>
+                        <img src="./img/plus.png" alt="Add" onclick="addToBasket ('Baconburger',9.00)">
+                    </div>
+                </div>
+
+                <img src="./img/salad.jpg" alt="">
+                <div class="heading">
+                    <h2>Salat</h2>
+                </div>
+                <div class="recept-box">
+                    <div>
+                        <h3>Bauern Salat</h3>
+                        <br>
+                        <h3>6,00</h3>
+                    </div>
+                    <div>
+                        <img src="./img/plus.png" alt="Add" onclick="addToBasket ('Salat',6.00)">
+                    </div>
+                </div>
+                <div class="recept-box">
+                    <div>
+                        <h3>Ceaser Salat</h3>
+                        <br>
+                        <h3>6,50</h3>
+                    </div>
+                    <div>
+                        <img src="./img/plus.png" alt="Add" onclick="addToBasket ('Ceaser Salat',6.50)">
+                    </div>
+                </div>
+
+                <img src="./img/rippchen.jpg" alt="">
+                <div class="heading">
+                    <h2>Fleisch</h2>
+                </div>
+                <div class="recept-box">
+                    <div>
+                        <h3>Rippchen</h3>
+                        <br>
+                        <p>serviert mit salat und Bratkertoffeln</p>
+                        <br>
+                        <h3>13,00</h3>
+                    </div>
+                    <div>
+                        <img src="./img/plus.png" alt="Add" onclick="addToBasket ('Rippchen',13.00)">
+                    </div>
+                </div>
+                <div class="recept-box">
+                    <div>
+                        <h3>Rinder Filet</h3>
+                        <br>
+                        <p>serviert mit salat und Bratkertoffeln</p>
+                        <br>
+                        <h3>19,00</h3>
+                    </div>
+                    <div>
+                        <img src="./img/plus.png" alt="Add" onclick="addToBasket ('Rinder Filet',19.00)">
+                    </div>
+                </div>
+
+                <img src="./img/pasta.jpg" alt="">
+                <div class="heading">
+                    <h2>Pasta</h2>
+                </div>
+                <div class="recept-box">
+                    <div>
+                        <h3>Spagetti Napoli</h3>
+                        <br>
+                        <p>serviert mit salat</p>
+                        <br>
+                        <h3>7,00</h3>
+                    </div>
+                    <div>
+                        <img src="./img/plus.png" alt="Add" onclick="addToBasket ('Spagetti Napoli',7.00)">
+                    </div>
+                </div>
+                <div class="recept-box">
+                    <div>
+                        <h3>Schrimps Spagetti</h3>
+                        <br>
+                        <p>serviert mit salat</p>
+                        <br>
+                        <h3>16,00</h3>
+                    </div>
+                    <div>
+                        <img src="./img/plus.png" alt="Add" onclick="addToBasket ('Schrimps Spagetti',16.00)">
+                    </div>
+                </div>
+
+                <img src="./img/onion-rings.jpg" alt="">
+                <div class="heading">
+                    <h2>Fingerfood</h2>
+                </div>
+                <div class="recept-box">
+                    <div>
+                        <h3>Onion rings</h3>
+                        <br>
+                        <h3>4,00</h3>
+                    </div>
+                    <div>
+                        <img src="./img/plus.png" alt="Add" onclick="addToBasket ('Onion rings',4.00)">
+                    </div>
+                </div>
+
+                <img src="./img/pancakes.jpg" alt="">
+                <div class="heading">
+                    <h2>Nachtisch</h2>
+                </div>
+                <div class="recept-box">
+                    <div>
+                        <h3>Eierkuchen</h3>
+                        <br>
+                        <p>serviert mit vanille Eis</p>
+                        <br>
+                        <h3>6,00</h3>
+                    </div>
+                    <div>
+                        <img src="./img/plus.png" alt="Add" onclick="addToBasket ('Eierkuchen',6.00)">
+                    </div>
+                </div>
+                <div class="recept-box">
+                    <div>
+                        <h3>Eis Quatet</h3>
+                        <br>
+                        <p>serviert mit Sahne</p>
+                        <br>
+                        <h3>6,00</h3>
+                    </div>
+                    <div>
+                        <img src="./img/plus.png" alt="Add" onclick="addToBasket ('Eis Quatet',6.00)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shoping-basket">
+            <h2>Warenkorb</h2>
+            <div id="choosenDishes">
+                <div class="emty-basket">
+                    <img src="./img/tasche.png" alt="">
+                    <h2>Fülle deinen Warenkorb</h2>
+                    <p>Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.</p>
+                </div>
+            </div>
+        </div>
+        <div class="buy-700px" id="small-screan">
+        </div>
+    </div>
+    <footer>
+        <p>Icons von <a target="_blank" href="https://icons8.com">Icons8</a>.</p>
+        <p>Bilder von <a href="https://pixabay.com/">pixabay</a>.</p>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* ===== Scrollbar CSS ===== */
+    /* Firefox */
+
+    scrollbar-width: auto;
+    scrollbar-color: #ffa600 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ffa600;
+
+    border: 3px solid #ffffff;
+}
+
+
+body {
+    height: 100%;
+    color: rgb(36, 46, 48);
+}
+
+a {
+    color: rgb(36, 46, 48);
+}
+
+/* Navigation ------------------------------------------------------------ */
+nav {
+    height: 72px;
+    padding: 12px, 16px;
+    box-shadow: -1px 17px 13px -15px rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mid-nav p {
+    font-weight: 600;
+}
+
+.front-nav {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: orange;
+}
+
+.front-nav a {
+    text-decoration: none;
+    color: orange;
+}
+
+.front-nav img {
+    height: 40px;
+    width: auto;
+}
+
+.end-nav {
+    padding-right: 20px;
+    gap: 16px;
+}
+
+.end-nav img {
+    height: 40px;
+    width: auto;
+
+}
+
+/* Speisekarte -------------------------------------------------------- */
+.main-site {
+    display: flex;
+    margin-right: 344px;
+    height: 100%;
+    width: 100%;
+}
+
+.restaurant-info {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 10px 16px;
+    height: 140px;
+    width: 100%;
+    text-align: left;
+    box-shadow: -1px 17px 10px -15px rgba(0, 0, 0, 0.40);
+}
+
+.heart {
+    height: 45px;
+    background-color: rgb(229, 229, 229);
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.restaurant-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 960px;
+    width: 100%;
+    gap: 16px;
+}
+
+.restaurant-text img {
+    height: 16px;
+}
+
+.min-cost {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.menu-site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.top-img {
+    object-fit: cover;
+    height: 320px;
+    width: 100%;
+}
+
+.recept-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 14px;
+    margin: 0px 16px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 960px;
+}
+
+.recept-box img {
+    background-color: rgb(233, 233, 233);
+    height: 32px !important;
+    width: 32px;
+    border-radius: 20px !important;
+    padding: 3px !important;
+}
+
+.recept-box img:hover {
+    cursor: pointer;
+}
+
+.heading {
+    padding: 16px 5px;
+    width: 100%;
+    max-width: 960px;
+    text-align: left;
+}
+
+.dish-list img {
+    object-fit: cover;
+    height: 152px;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 960px;
+}
+
+p {
+    font-size: 15px;
+    color: rgb(53, 53, 53);
+}
+
+.dish-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    width: 100%;
+}
+
+/* Der Wahrenkorb!!! ----------------------------------------------------------- */
+.shoping-basket {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 344px;
+    width: 344px;
+    box-shadow: -26px -1px 20px -20px rgba(0, 0, 0, 0.45);
+    padding: 16px;
+    overflow: auto;
+    height: 100vh;
+}
+
+.shoping-basket h2 {
+    text-align: center;
+    margin-top: 16px;
+
+}
+
+.choosenDishes {
+    display: flex;
+    flex-direction: column;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 32px 16px;
+}
+
+.dish-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dish-top h3 {
+    text-decoration: underline;
+}
+
+.dish-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dish-bottom img {
+    height: 32px;
+    width: 32px;
+}
+
+.bin {
+    height: 25px !important;
+    width: 25px !important;
+}
+
+.dish-bottom img:hover {
+    cursor: pointer;
+}
+
+.bin:hover {
+    cursor: pointer;
+}
+
+.final-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    gap: 5px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 166, 0);
+    padding-bottom: 16px;
+    border-radius: 28px;
+}
+
+.buy-button:hover {
+    cursor: pointer;
+}
+
+.emty-basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px;
+    text-align: center;
+    gap: 16px;
+    color: rgb(36, 46, 48);
+}
+
+.buy-page {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.small-screan {
+    display: none !important;
+}
+
+.buy-700px {
+    display: none;
+}
+
+/* Footer ---------------------------------------------------------------------- */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+    padding: 16px;
+}
+
+/* Bildschirm größen anpassung ------------------------------------------------- */
+@media (max-width: 700px) {
+
+    .shoping-basket {
+        display: none;
+
+    }
+
+    .main-site {
+        flex-direction: column;
+    }
+
+    .heart {
+        display: none;
+    }
+
+    .buy-700px {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+    }
+
+    .buy-button {
+        position: fixed;
+        bottom: 0;
+        margin: 16px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        height: 50px;
+        width: 94%;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding-right: 10px;
+    }
+
+    .front-nav img {
+        display: none;
+
+    }
+
+    .front-nav {
+        margin-left: 10px;
+        padding: 0;
+        gap: 0;
+    }
+
+    .mid-nav {
+        font-size: 16px;
+    }
+
+    .end-nav {
+        display: none;
+    }
+
+    footer {
+        margin-bottom: 60px;
+    }
+
+    .buy-button-small {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 166, 0);
+        padding: 16px;
+        border-radius: 28px;
+        margin: 0px 5px;
+    }
+
+    .buy-button-small:hover {
+        cursor: pointer;
+    }
+
+    .buy-page {
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+}
